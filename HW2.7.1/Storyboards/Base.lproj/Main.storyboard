@@ -40,7 +40,7 @@
         <!--Person Settings-->
         <scene sceneID="qzj-6z-85n">
             <objects>
-                <tableViewController id="9bp-lW-Tzo" sceneMemberID="viewController">
+                <tableViewController id="9bp-lW-Tzo" customClass="PersonSettingsTableViewController" customModule="HW2_7_1" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="xRZ-gt-KHB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

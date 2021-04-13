@@ -12,7 +12,10 @@
 		9918F2E22626238500F141F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9918F2E02626238500F141F7 /* Main.storyboard */; };
 		9918F2E42626238600F141F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9918F2E32626238600F141F7 /* Assets.xcassets */; };
 		9918F2E72626238600F141F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9918F2E52626238600F141F7 /* LaunchScreen.storyboard */; };
-		9918F2F12626258100F141F7 /* PersonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9918F2F02626258100F141F7 /* PersonListViewController.swift */; };
+		9918F2FB26262C3000F141F7 /* PersonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9918F2FA26262C3000F141F7 /* PersonListViewController.swift */; };
+		9918F2FE26262C5800F141F7 /* PersonSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9918F2FD26262C5800F141F7 /* PersonSettingsTableViewController.swift */; };
+		9918F30126262CB400F141F7 /* Persons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9918F30026262CB400F141F7 /* Persons.swift */; };
+		9918F30426262CC800F141F7 /* DataPersons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9918F30326262CC800F141F7 /* DataPersons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +26,10 @@
 		9918F2E32626238600F141F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9918F2E62626238600F141F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9918F2E82626238600F141F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9918F2F02626258100F141F7 /* PersonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListViewController.swift; sourceTree = "<group>"; };
+		9918F2FA26262C3000F141F7 /* PersonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListViewController.swift; sourceTree = "<group>"; };
+		9918F2FD26262C5800F141F7 /* PersonSettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonSettingsTableViewController.swift; sourceTree = "<group>"; };
+		9918F30026262CB400F141F7 /* Persons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persons.swift; sourceTree = "<group>"; };
+		9918F30326262CC800F141F7 /* DataPersons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPersons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,7 @@
 		9918F2F32626281D00F141F7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9918F30026262CB400F141F7 /* Persons.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -76,6 +83,7 @@
 		9918F2F4262628D600F141F7 /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
+				9918F30326262CC800F141F7 /* DataPersons.swift */,
 			);
 			path = DataManager;
 			sourceTree = "<group>";
@@ -110,7 +118,8 @@
 		9918F2F82626294A00F141F7 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				9918F2F02626258100F141F7 /* PersonListViewController.swift */,
+				9918F2FA26262C3000F141F7 /* PersonListViewController.swift */,
+				9918F2FD26262C5800F141F7 /* PersonSettingsTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -185,8 +194,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9918F2F12626258100F141F7 /* PersonListViewController.swift in Sources */,
+				9918F2FB26262C3000F141F7 /* PersonListViewController.swift in Sources */,
+				9918F2FE26262C5800F141F7 /* PersonSettingsTableViewController.swift in Sources */,
+				9918F30426262CC800F141F7 /* DataPersons.swift in Sources */,
 				9918F2DB2626238500F141F7 /* AppDelegate.swift in Sources */,
+				9918F30126262CB400F141F7 /* Persons.swift in Sources */,
 				9918F2DD2626238500F141F7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
