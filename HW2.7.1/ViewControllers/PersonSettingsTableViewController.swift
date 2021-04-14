@@ -10,6 +10,7 @@ import UIKit
 class PersonSettingsTableViewController: UITableViewController {
     
     private var personList = DataPersons.getDataPerson()
+    
    
     override func numberOfSections(in tableView: UITableView) -> Int {
         personList.count
@@ -27,10 +28,22 @@ class PersonSettingsTableViewController: UITableViewController {
         
         switch indexPath.row {
         case 1:
-            cell?.textLabel?.text =  personList[indexPath.section].phoneNumber
+           //cell?.textLabel?.text =  personList[indexPath.section].phoneNumber
+            var content = cell?.defaultContentConfiguration()
+            content?.text = personList[indexPath.section].phoneNumber
+            content?.image = UIImage(named: "phone")
+            content?.imageProperties.cornerRadius = tableView.rowHeight/2
+            cell?.contentConfiguration = content
         default:
-            cell?.textLabel?.text = personList[indexPath.section].email
+           //cell?.textLabel?.text = personList[indexPath.section].email
+            var content = cell?.defaultContentConfiguration()
+            content?.text = personList[indexPath.section].email
+            content?.image = UIImage(named: "email")
+            content?.imageProperties.cornerRadius = tableView.rowHeight/2
+            cell?.contentConfiguration = content
         }
+        tableView.rowHeight = 55
+        
         return cell!
     }
     
