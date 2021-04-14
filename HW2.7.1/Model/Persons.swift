@@ -6,3 +6,18 @@
 //
 
 import Foundation
+
+struct Person {
+    let firstName: String
+    let lastNames: String
+    
+    var title: String {
+        "\(firstName) + \(lastNames)"
+    }
+
+    
+/*extension Person {
+    static func getTitle() -> [Person] {
+       
+}*/
+}

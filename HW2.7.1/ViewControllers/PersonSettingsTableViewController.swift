@@ -8,7 +8,9 @@
 import UIKit
 
 class PersonSettingsTableViewController: UITableViewController {
-
+    
+    private var personList = DataPersons.getDataPerson()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,14 +23,23 @@ class PersonSettingsTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        personList.count
+        
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "personInfo", for: indexPath)
+        let person = personList[indexPath.row]
+        var content = cell.defaultContentConfiguration()
+        content.text = person.title
+        
+        
+        content.secondaryText =  person.phoneNumber
+        
+        cell.contentConfiguration = content
+        return cell
     }
 
     /*
