@@ -111,10 +111,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="personInfo" id="S0D-cP-AOD">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CustomHeaderView" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="personInfo" id="S0D-cP-AOD" customClass="CustomHeaderView">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CustomHeaderView" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="S0D-cP-AOD" id="DgY-b4-udf" customClass="UILabel">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="S0D-cP-AOD" id="DgY-b4-udf">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
@@ -132,11 +132,11 @@
             </objects>
             <point key="canvasLocation" x="943" y="730"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="ORV-YJ-nZd">
             <objects>
                 <navigationController id="FMu-FM-ymd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="HmA-EN-hpR"/>
+                    <tabBarItem key="tabBarItem" title="" image="person.fill" catalog="system" id="HmA-EN-hpR"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Re4-PI-Hb5">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -149,11 +149,11 @@
             </objects>
             <point key="canvasLocation" x="54" y="730"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="dbe-fa-5WH">
             <objects>
                 <navigationController id="StR-06-Jpf" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="g6W-dc-M1q"/>
+                    <tabBarItem key="tabBarItem" title="" image="person" catalog="system" id="g6W-dc-M1q"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="G6w-UO-NTg">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -187,6 +187,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
